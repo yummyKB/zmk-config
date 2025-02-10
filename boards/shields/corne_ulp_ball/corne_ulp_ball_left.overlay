@@ -18,22 +18,6 @@
     };
 };
 
-&xiao_i2c {
-    status = "okay";
-    cs-gpios = <&xiao_d 4 GPIO_ACTIVE_LOW>;
-
-    glidepoint: glidepoint@0 {
-        compatible = "cirque,pinnacle";
-        reg = <0>;
-        spi-max-frequency = <1000000>;
-        status = "okay";
-        dr-gpios = <&xiao_d 5 (GPIO_ACTIVE_HIGH)>;
-
-        sensitivity = "4x";
-        sleep;
-        no-taps;
-    };
-};
 
 &kscan {
     // Replace these comments with the GPIO pins in the matrix for the left side.
@@ -46,12 +30,6 @@
         , <&shifter 3 GPIO_ACTIVE_HIGH>
         , <&shifter 2 GPIO_ACTIVE_HIGH>
         ;
-};
-
-&glidepoint_split {
-    compatible = "zmk,input-listener";
-    reg = <0>;
-    device = <&glidepoint>;
 };
 
 &glidepoint_listener {
