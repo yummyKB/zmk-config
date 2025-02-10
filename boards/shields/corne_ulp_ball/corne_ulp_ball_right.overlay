@@ -55,5 +55,7 @@
 
 
 &glidepoint_split {
+    compatible = "zmk,input-split";
+    reg = <1>;
     device = <&glidepoint>;
 };
