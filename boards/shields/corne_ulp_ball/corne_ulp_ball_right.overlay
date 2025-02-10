@@ -27,9 +27,9 @@
     status = "okay";
     cs-gpios = <&xiao_d 4 GPIO_ACTIVE_LOW>;
 
-    glidepoint: glidepoint@0 {
+    glidepoint: glidepoint@1 {
         compatible = "cirque,pinnacle";
-        reg = <0>;
+        reg = <1>;
         spi-max-frequency = <1000000>;
         status = "okay";
         dr-gpios = <&xiao_d 5 (GPIO_ACTIVE_HIGH)>;
