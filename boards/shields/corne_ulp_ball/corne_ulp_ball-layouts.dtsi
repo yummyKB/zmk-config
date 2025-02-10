@@ -53,8 +53,8 @@
             , <&key_physical_attrs 100 100  348 312.5      0     0     0>
             , <&key_physical_attrs 100 100  348 312.5     15  3.98 7.895>
             , <&key_physical_attrs 100 150  348 262.5     30  3.98 7.895>
-            , <&key_physical_attrs 100 150 1052 262.5    -30 11.02 7.895>
-            , <&key_physical_attrs 100 100 1052 312.5    -15 11.02 7.895>
+            , <&key_physical_attrs 100 150 1052 262.5  (-30) 11.02 7.895>
+            , <&key_physical_attrs 100 100 1052 312.5  (-15) 11.02 7.895>
             , <&key_physical_attrs 100 100 1052 312.5      0     0     0>
             ;
     };
