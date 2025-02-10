@@ -1,0 +1,5 @@
+config SHIELD_CORNE_ULP_BALL_LEFT
+    def_bool $(shields_list_contains,corne_ulp_ball_left)
+
+config SHIELD_CORNE_ULP_BALL_RIGHT
+    def_bool $(shields_list_contains,corne_ulp_ball_right)
