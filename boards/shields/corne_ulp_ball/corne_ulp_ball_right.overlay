@@ -52,3 +52,8 @@
         , <&shifter 2 GPIO_ACTIVE_HIGH>
         ;
 };
+
+
+&glidepoint_split {
+    device = <&glidepoint>;
+};
