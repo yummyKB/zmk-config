@@ -27,9 +27,9 @@
     status = "okay";
     clock-frequency = <I2C_BITRATE_FAST>;
 
-    trackball: trackball@5a {
+    trackball: trackball@fd {
         compatible = "palette,az1uball";
-        reg = <0x5A>;
+        reg = <0xFD>;
 		status = "okay";
     };
 };
@@ -38,12 +38,12 @@
     // Replace these comments with the GPIO pins in the matrix for the right side.
     // See https://zmk.dev/docs/development/hardware-integration/new-shield#shield-overlays
     col-gpios
-        = <&shifter 7 GPIO_ACTIVE_HIGH>
-        , <&shifter 6 GPIO_ACTIVE_HIGH>
-        , <&shifter 5 GPIO_ACTIVE_HIGH>
-        , <&shifter 4 GPIO_ACTIVE_HIGH>
+        = <&shifter 2 GPIO_ACTIVE_HIGH>
         , <&shifter 3 GPIO_ACTIVE_HIGH>
-        , <&shifter 2 GPIO_ACTIVE_HIGH>
+        , <&shifter 4 GPIO_ACTIVE_HIGH>
+        , <&shifter 5 GPIO_ACTIVE_HIGH>
+        , <&shifter 6 GPIO_ACTIVE_HIGH>
+        , <&shifter 7 GPIO_ACTIVE_HIGH>
         ;
 };
 
