@@ -49,8 +49,12 @@
     };
 
     split_inputs {
-        trackball_split: trackball_split@0 {
+        #address-cells = <1>;
+        #size-cells = <0>;
+
+        trackball_split: trackball_split@5a {
             compatible = "zmk,input-split";
+            reg = <0x5A>;
         };
     };
 
