@@ -30,7 +30,7 @@
     trackball: trackball@5a {
         compatible = "pimoroni,trackball_pim447";
         reg = <0x5A>;
-        status = "okay";
+        label = "TRACKBALL_PIM447";
 
         sensitivity = "4x";
         sleep;
