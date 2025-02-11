@@ -31,6 +31,7 @@
         compatible = "palette,az1uball";
         reg = <0x5A>;
 		status = "okay";
+		label = "AZ1UBALL"
     };
 };
 
