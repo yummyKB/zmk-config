@@ -27,3 +27,7 @@
      artifact-name: corne_ulp_ball_left_with_studio
    - board: seeeduino_xiao_ble
      shield: corne_ulp_ball_right
+   - board: seeeduino_xiao_ble
+     shield: settings_reset
+
+
