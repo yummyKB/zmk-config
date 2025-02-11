@@ -32,7 +32,6 @@
         reg = <0x5A>;
 		status = "okay";
 
-        sensitivity = "4x";
         sleep;
         no-taps;
     };
