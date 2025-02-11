@@ -20,16 +20,16 @@
         // "row2col", change the col-gpios in the _left.overlay and _right.overlay
         // files to (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN) and the row-gpios here to
         // GPIO_ACTIVE_HIGH.
-        diode-direction = "row2col";
+        diode-direction = "col2row";
         wakeup-source;
 
         // Replace these comments with the GPIO pins in the matrix.
         // See https://zmk.dev/docs/development/hardware-integration/new-shield#shield-overlays
         row-gpios
-            = <&xiao_d 0 GPIO_ACTIVE_HIGH>
-            , <&xiao_d 1 GPIO_ACTIVE_HIGH>
-            , <&xiao_d 2 GPIO_ACTIVE_HIGH>
-            , <&xiao_d 3 GPIO_ACTIVE_HIGH>
+            = <&xiao_d 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&xiao_d 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&xiao_d 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&xiao_d 3 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
             ;
     };
 
