@@ -25,7 +25,7 @@ config SPI
 config I2C
     default y
 
-config ZMK_SENSOR_PIM447
+config ZMK_PIMORONI_PIM447
     default y
 
 endif # SHIELD_CORNE_ULP_BALL_LEFT || SHIELD_CORNE_ULP_BALL_RIGHT

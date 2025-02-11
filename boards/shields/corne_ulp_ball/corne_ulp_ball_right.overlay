@@ -30,7 +30,6 @@
     trackball: trackball@5a {
         compatible = "zmk,behavior-pim447";
         reg = <0x5A>;
-        label = "PIM447";
 		status = "okay";
 
         sensitivity = "4x";
