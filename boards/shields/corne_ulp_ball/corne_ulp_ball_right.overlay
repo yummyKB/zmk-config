@@ -28,7 +28,7 @@
     clock-frequency = <I2C_BITRATE_FAST>;
 
     trackball: trackball@5a {
-        compatible = "zmk,behavior-pim447";
+        compatible = "palette,az1uball";
         reg = <0x5A>;
 		status = "okay";
 
