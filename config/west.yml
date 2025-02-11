@@ -2,15 +2,15 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: t0bybr
-      url-base: https://github.com/t0bybr
+    - name: kzyz
+      url-base: https://github.com/kzyz
   projects:
     - name: zmk
       remote: zmkfirmware
       revision: main
       import: app/west.yml
-    - name: pim447
-      remote: t0bybr
+    - name: zmk_az1uball_driver
+      remote: kzyz
       revision: main
   self:
     path: config
