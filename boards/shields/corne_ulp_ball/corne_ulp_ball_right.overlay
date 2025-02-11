@@ -31,7 +31,6 @@
         compatible = "palette,az1uball";
         reg = <0x5A>;
 		status = "okay";
-		label = "AZ1UBALL";
     };
 };
 
@@ -47,7 +46,6 @@
         , <&shifter 2 GPIO_ACTIVE_HIGH>
         ;
 };
-
 
 &trackball_split {
     device = <&trackball>;
