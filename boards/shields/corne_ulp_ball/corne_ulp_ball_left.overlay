@@ -32,6 +32,6 @@
         ;
 };
 
-&glidepoint_listener {
+&trackball_listener {
     status = "okay";
 };
