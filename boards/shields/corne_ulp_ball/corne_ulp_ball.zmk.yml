@@ -17,7 +17,7 @@ features:
   - pointer
   - studio  # Remove this line if your keyboard will not support ZMK Studio
 requires:
-  - seeeduino_xiao_ble
+  - seeeduino_xiao
 exposes:
   - i2c_trackball
 siblings:
