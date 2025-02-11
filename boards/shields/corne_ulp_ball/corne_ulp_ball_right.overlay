@@ -28,9 +28,9 @@
     clock-frequency = <I2C_BITRATE_STANDARD>;
 
     trackball: trackball@5a {
-        compatible = "pimoroni,trackball_pim447";
+        compatible = "zmk,i2c-point-device";
         reg = <0x5A>;
-        label = "TRACKBALL_PIM447";
+        label = "trackball";
 
         sensitivity = "4x";
         sleep;
