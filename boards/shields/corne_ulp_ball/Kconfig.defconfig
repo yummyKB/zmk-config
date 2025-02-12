@@ -28,7 +28,4 @@ config I2C
 config ZMK_AZ1UBALL
     default y
 
-config BT_CTLR_TX_PWR_PLUS_8
-    default y
-
 endif # SHIELD_CORNE_ULP_BALL_LEFT || SHIELD_CORNE_ULP_BALL_RIGHT
