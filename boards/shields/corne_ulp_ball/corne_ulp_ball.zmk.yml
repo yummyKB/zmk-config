@@ -14,11 +14,9 @@ url: https://github.com/kzyz/zmk-config
 # See https://zmk.dev/docs/development/hardware-integration/hardware-metadata-files#features
 features:
   - keys
-  - pointer
   - studio  # Remove this line if your keyboard will not support ZMK Studio
 requires:
   - seeeduino_xiao
-  - az1uball
 siblings:
   - corne_ulp_ball_left
   - corne_ulp_ball_right

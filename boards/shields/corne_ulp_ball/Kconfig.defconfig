@@ -16,16 +16,11 @@ if SHIELD_CORNE_ULP_BALL_LEFT || SHIELD_CORNE_ULP_BALL_RIGHT
 config ZMK_SPLIT
     default y
 
-config ZMK_POINTING
-    default y
-
 config SPI
     default y
 
 config I2C
     default y
 
-config ZMK_AZ1UBALL
-    default y
 
 endif # SHIELD_CORNE_ULP_BALL_LEFT || SHIELD_CORNE_ULP_BALL_RIGHT
