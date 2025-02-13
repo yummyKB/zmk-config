@@ -75,6 +75,8 @@
     // };
 };
 
+&xiao_serial { status = "disabled"; };
+
 &xiao_spi {
     status = "okay";
     cs-gpios = <&xiao_d 9 GPIO_ACTIVE_LOW>;
