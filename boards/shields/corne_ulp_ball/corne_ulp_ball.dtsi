@@ -23,6 +23,8 @@
         diode-direction = "col2row";
         wakeup-source;
 
+        debounce-press-ms = <5>;
+
         // Replace these comments with the GPIO pins in the matrix.
         // See https://zmk.dev/docs/development/hardware-integration/new-shield#shield-overlays
         row-gpios
