@@ -4,20 +4,6 @@
 
 #include "corne_ulp_ball.dtsi"
 
-&xiao_spi {
-    status = "okay";
-    cs-gpios = <&xiao_d 9 GPIO_ACTIVE_LOW>;
-    shifter: 595@0 {
-        compatible = "zmk,gpio-595";
-        status = "okay";
-        gpio-controller;
-        spi-max-frequency = <200000>;
-        reg = <0>;
-        #gpio-cells = <2>;
-        ngpios = <8>;
-    };
-};
-
 // &xiao_i2c {
 //     status = "okay";
 //     clock-frequency = <I2C_BITRATE_FAST>;
@@ -28,19 +14,6 @@
 // 		status = "okay";
 //     };
 // };
-
-&kscan {
-    // Replace these comments with the GPIO pins in the matrix for the left side.
-    // See https://zmk.dev/docs/development/hardware-integration/new-shield#shield-overlays
-    col-gpios
-        = <&shifter 7 GPIO_ACTIVE_HIGH>
-        , <&shifter 6 GPIO_ACTIVE_HIGH>
-        , <&shifter 5 GPIO_ACTIVE_HIGH>
-        , <&shifter 4 GPIO_ACTIVE_HIGH>
-        , <&shifter 3 GPIO_ACTIVE_HIGH>
-        , <&shifter 2 GPIO_ACTIVE_HIGH>
-        ;
-};
 
 // &trackball_split {
 //     device = <&trackball>;
