@@ -19,10 +19,4 @@ config ZMK_SPLIT
 config SPI
     default y
 
-config I2C
-    default y
-
-config ZMK_AZ1UBALL
-    default y
-
 endif # SHIELD_CORNE_ULP_BALL_LEFT || SHIELD_CORNE_ULP_BALL_RIGHT
