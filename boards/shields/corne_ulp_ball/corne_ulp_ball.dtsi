@@ -58,21 +58,21 @@
         >;
     };
 
-    // split_inputs {
-    //     #address-cells = <1>;
-    //     #size-cells = <0>;
-    //
-    //     trackball_split: trackball_split@5a {
-    //         compatible = "zmk,input-split";
-    //         reg = <0x5A>;
-    //     };
-    // };
-    //
-    // trackball_listener: trackball_listener {
-    //     compatible = "zmk,input-listener";
-    //     status = "disabled";
-    //     device = <&trackball_split>;
-    // };
+    split_inputs {
+        #address-cells = <1>;
+        #size-cells = <0>;
+
+        trackball_split: trackball_split@0a {
+            compatible = "zmk,input-split";
+            reg = <0x0A>;
+        };
+    };
+
+    trackball_listener: trackball_listener {
+        compatible = "zmk,input-listener";
+        status = "disabled";
+        device = <&trackball_split>;
+    };
 };
 
 &xiao_serial { status = "disabled"; };
