@@ -23,7 +23,6 @@
    - board: seeeduino_xiao_ble
      shield: corne_ulp_ball_left
      snippet: zmk-usb-logging
-     artifact-name: corne_ulp_ball_left
    - board: seeeduino_xiao_ble
      shield: corne_ulp_ball_right
    - board: seeeduino_xiao_ble
