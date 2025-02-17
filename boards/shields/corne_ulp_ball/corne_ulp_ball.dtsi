@@ -58,7 +58,7 @@
         >;
     };
 
-    mouse_ps2_input_listener: mouse_ps2_input_listener {
+    trackball_input_listener: trackball_input_listener {
         compatible = "zmk,input-listener";
         status = "disabled";
     };

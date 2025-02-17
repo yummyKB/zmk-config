@@ -7,14 +7,14 @@
 &xiao_i2c {
     status = "okay";
     clock-frequency = <I2C_BITRATE_FAST>;
-    mouse_ps2: mouse_ps2@0a {
+    trackball: trackball@0a {
         compatible = "palette,az1uball";
         reg = <0x0A>;
 		status = "okay";
     };
 };
 
-&mouse_ps2_input_listener {
+&trackball_input_listener {
     status = "okay";
-    device = <&mouse_ps2>;
+    device = <&trackball>;
 };
