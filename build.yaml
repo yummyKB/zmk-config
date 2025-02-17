@@ -23,7 +23,6 @@
    - board: seeeduino_xiao_ble
      shield: corne_ulp_ball_left
      snippet: zmk-usb-logging
-     cmake-args: -DCONFIG_ZMK_STUDIO=y
      artifact-name: corne_ulp_ball_left_with_studio
    - board: seeeduino_xiao_ble
      shield: corne_ulp_ball_right

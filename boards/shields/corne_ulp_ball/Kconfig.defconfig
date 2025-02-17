@@ -15,9 +15,6 @@ config AZ1UBALL
 config I2C
     default y
 
-config ZMK_STUDIO
-    default y
-
 endif # SHIELD_CORNE_ULP_BALL_LEFT
 
 if SHIELD_CORNE_ULP_BALL_LEFT || SHIELD_CORNE_ULP_BALL_RIGHT
