@@ -3,6 +3,7 @@
 // instructions.
 
 #include "corne_ulp_ball.dtsi"
+#include <dt-bindings/zmk/input_transform.h>
 
 &xiao_i2c {
     status = "okay";
@@ -18,7 +19,7 @@
 &trackball_input_listener_0 {
     status = "okay";
     device = <&trackball>;
-    input-processors = <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP)>;
+    input-processors = <&zip_xy_scaler 8 8>,<&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP)>;
 };
 
 &trackball_input_listener_1 {
