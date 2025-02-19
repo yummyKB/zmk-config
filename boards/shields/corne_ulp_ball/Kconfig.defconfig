@@ -6,15 +6,8 @@ config ZMK_KEYBOARD_NAME
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
 
-config ZMK_POINTING
+config ZMK_STUDIO
     default y
-
-config AZ1UBALL
-    default y
-
-config I2C
-    default y
-
 
 endif # SHIELD_CORNE_ULP_BALL_LEFT
 
@@ -24,6 +17,15 @@ config ZMK_SPLIT
     default y
 
 config SPI
+    default y
+
+config ZMK_POINTING
+    default y
+
+config AZ1UBALL
+    default y
+
+config I2C
     default y
 
 endif # SHIELD_CORNE_ULP_BALL_LEFT || SHIELD_CORNE_ULP_BALL_RIGHT

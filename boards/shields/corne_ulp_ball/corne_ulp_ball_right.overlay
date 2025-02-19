@@ -8,3 +8,19 @@
     // Set this to the number of columns on the left side.
     col-offset = <6>;
 };
+
+&xiao_i2c {
+    status = "okay";
+    clock-frequency = <I2C_BITRATE_FAST>;
+    trackball: trackball@a {
+        compatible = "palette,az1uball";
+        reg = <0x0A>;
+        automouse-layer = <1>
+		status = "okay";
+    };
+};
+
+&trackball_split {
+    device = <&trackball>;
+    input-processors = <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP)>;
+};
