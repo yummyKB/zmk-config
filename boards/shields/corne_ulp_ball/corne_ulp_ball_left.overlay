@@ -10,7 +10,7 @@
     trackball: trackball@a {
         compatible = "palette,az1uball";
         reg = <0x0A>;
-        automouse-layer = <1>
+        automouse-layer = <1>;
 		status = "okay";
     };
 };
