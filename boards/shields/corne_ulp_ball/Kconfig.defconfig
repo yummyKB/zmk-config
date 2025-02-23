@@ -35,4 +35,16 @@ config AZ1UBALL
 config I2C
     default y
 
+config BT_CTLR_TX_PWR_PLUS_8
+    default y
+
+config ZMK_SPLIT_BLE_CENTRAL_BATTERY_LEVEL_PROXY
+    default y
+
+config ZMK_SPLIT_BLE_CENTRAL_BATTERY_LEVEL_FETCHING
+    default y
+
+config BT_BAS
+    default n
+
 endif # SHIELD_CORNE_ULP_BALL_LEFT || SHIELD_CORNE_ULP_BALL_RIGHT
