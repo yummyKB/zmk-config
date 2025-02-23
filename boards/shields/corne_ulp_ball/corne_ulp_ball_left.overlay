@@ -6,17 +6,6 @@
 #include <input/processors.dtsi>
 #include <dt-bindings/zmk/input_transform.h>
 
-&xiao_i2c {
-    status = "okay";
-    clock-frequency = <I2C_BITRATE_FAST>;
-    trackball: trackball@a {
-        compatible = "palette,az1uball";
-        reg = <0x0A>;
-        automouse-layer = <1>;
-		status = "okay";
-    };
-};
-
 &trackball_input_listener_0 {
     status = "okay";
     device = <&trackball>;
@@ -25,4 +14,16 @@
 
 &trackball_input_listener_1 {
     status = "okay";
+};
+
+&xiao_i2c {
+    status = "okay";
+    clock-frequency = <I2C_BITRATE_FAST>;
+    trackball: trackball@a {
+        compatible = "palette,az1uball";
+        reg = <0x0A>;
+        status = "okay";
+        default-mode = "scroll";
+        sensitivity = "4x";
+    };
 };

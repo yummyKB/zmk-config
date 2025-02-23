@@ -11,18 +11,19 @@
     col-offset = <6>;
 };
 
+&trackball_split {
+    device = <&trackball>;
+    input-processors = <&zip_xy_scaler 16 16>,<&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_X_INVERT)>;
+};
+
 &xiao_i2c {
     status = "okay";
     clock-frequency = <I2C_BITRATE_FAST>;
     trackball: trackball@a {
         compatible = "palette,az1uball";
         reg = <0x0A>;
-        automouse-layer = <1>;
-		status = "okay";
+        status = "okay";
+        default-mode = "mouse";
+        sensitivity = "4x";
     };
-};
-
-&trackball_split {
-    device = <&trackball>;
-    input-processors = <&zip_xy_scaler 16 16>,<&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_X_INVERT)>;
 };
