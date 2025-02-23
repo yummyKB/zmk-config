@@ -24,6 +24,6 @@
         reg = <0x0A>;
         status = "okay";
         default-mode = "scroll";
-        sensitivity = "4x";
+        sensitivity = "2x";
     };
 };
