@@ -4,6 +4,8 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: kzyz
       url-base: https://github.com/kzyz
+    - name: carrefinho
+      url-base: https://github.com/carrefinho
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -12,5 +14,9 @@ manifest:
     - name: zmk_az1uball_driver
       remote: kzyz
       revision: main
+    - name: prospector-zmk-module
+      remote: carrefinho
+      revision: main
   self:
     path: config
+  
