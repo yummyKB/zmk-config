@@ -19,10 +19,10 @@
 // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | SHFT |
 //                    | ALT | GUI | SPC/LOW |   | ENT | GUI  | ALT |
             bindings = <
-   &trans &trans   &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp UP &kp LPAR &kp RPAR &kp DEL
-   &trans &trans   &trans &trans   &trans   &trans      &kp MINUS &kp LEFT &kp BOTTOM  &kp RIGHT &kp BSLH &kp GRAVE
-   &trans &trans   &trans &trans   &trans   &trans      &kp UNDER &kp PLUS  &kp LBRC  &kp RBRC &kp PIPE &kp TILDE
-                             &trans &trans   &trans   &trans   &trans    &trans
+                &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+                &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+                &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+                &trans &trans &trans &trans &trans &trans
             >;
         };
         lower_layer {
@@ -33,10 +33,10 @@
 // | SHFT |     |     |     |     |     |   |     |     |     |     |     |     |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
             bindings = <
-   &trans &trans   &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp UP &kp LPAR &kp RPAR &kp DEL
-   &trans &trans   &trans &trans   &trans   &trans      &kp MINUS &kp LEFT &kp BOTTOM  &kp RIGHT &kp BSLH &kp GRAVE
-   &trans &trans   &trans &trans   &trans   &trans      &kp UNDER &kp PLUS  &kp LBRC  &kp RBRC &kp PIPE &kp TILDE
-                             &trans &trans   &trans   &trans   &trans    &trans
+                &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+                &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+                &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+                &trans &trans &trans &trans &trans &trans
             >;
         };
 
@@ -48,10 +48,10 @@
 // | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |   ~   |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
             bindings = <
-   &trans &trans   &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp UP &kp LPAR &kp RPAR &kp DEL
-   &trans &trans   &trans &trans   &trans   &trans      &kp MINUS &kp LEFT &kp BOTTOM  &kp RIGHT &kp BSLH &kp GRAVE
-   &trans &trans   &trans &trans   &trans   &trans      &kp UNDER &kp PLUS  &kp LBRC  &kp RBRC &kp PIPE &kp TILDE
-                             &trans &trans   &trans   &trans   &trans    &trans
+                &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+                &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+                &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+                &trans &trans &trans &trans &trans &trans
             >;
         };
     };
