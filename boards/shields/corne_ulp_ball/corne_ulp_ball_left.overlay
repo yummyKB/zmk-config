@@ -23,7 +23,7 @@
         compatible = "palette,az1uball";
         reg = <0x0A>;
         status = "okay";
-        default-mode = "scroll";
+        default-mode = "mouse";
         sensitivity = "2x";
     };
 };
