@@ -6,6 +6,17 @@
 #include <input/processors.dtsi>
 #include <dt-bindings/zmk/input_transform.h>
 
+//追加
+&kscan0 {
+    col-gpios = <&gpio0 11 GPIO_ACTIVE_HIGH>,
+                <&gpio1 12 GPIO_ACTIVE_HIGH>,
+                <&gpio1 13 GPIO_ACTIVE_HIGH>,
+                <&gpio1 14 GPIO_ACTIVE_HIGH>,
+                <&gpio1 15 GPIO_ACTIVE_HIGH>,
+                <&gpio1 10 GPIO_ACTIVE_HIGH>
+                ;
+};
+
 &default_transform {
     // Set this to the number of columns on the left side.
     col-offset = <6>;
